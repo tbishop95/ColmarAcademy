@@ -1,0 +1,90 @@
+body {
+	color: black;
+	font-size: 16px;
+	font-family: Helvetica;
+	 width: 1025px;
+}
+
+div {
+	display: block;
+}
+
+/*Navigation*/
+#navigation {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 4rem;
+	background-color: white;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	padding-left: 1.5rem;
+}
+
+.logo img {
+	height: 2.5rem;
+}
+
+.logo span {
+	text-transform: uppercase;
+	font-size: 1.25rem;
+}
+
+.colmar {
+	font-weight: 500;
+	padding-right: 0.1rem;
+}
+
+.academy {
+	font-weight: 200;
+	color: #999898;
+}
+
+#desknav {
+	display: flex;
+    padding-right: 1.5rem;
+}
+
+#desknav ul span {
+	padding: 0px 0.5rem;
+    font-weight: 300;
+}
+
+/*Learn Section*/
+#learn {
+	display: flex;
+	align-items: center;
+	padding: 2rem 1.5rem;
+	background-color: #d3d2d3;
+}
+
+#learn img {
+	width: 50%;
+	height: 25.5rem;
+	padding-right: 1.5rem;
+}
+
+.banner-info {
+	display: flex;
+    display: inline-block;
+}
+ 
+ .button {
+ 	background-color: #414141;
+ 	color: white;
+ 	padding: 0.5rem 1rem;
+ }
+
+ h1 {
+ 	font-size: 2rem;
+ 	font-weight: 700;
+ 	color: #444444;
+ }
+
+ h3 {
+ 	font-size: 1rem;
+ 	color: #444444;
+ }
