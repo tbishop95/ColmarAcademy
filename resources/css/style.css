@@ -2,12 +2,15 @@ body {
 	color: black;
 	font-size: 16px;
 	font-family: Helvetica;
-	 width: 1025px;
 }
 
 div {
 	display: block;
 }
+
+ a {
+ 	text-decoration: none;
+ }
 
 /*Navigation*/
 #navigation {
@@ -48,10 +51,41 @@ div {
     padding-right: 1.5rem;
 }
 
-#desknav ul span {
+#desknav li {
+	display: inline-block;
 	padding: 0px 0.5rem;
     font-weight: 300;
 }
+
+#mobnav {
+	display: none;
+}
+
+@media only screen and (max-width: 660px) {
+	#desknav {
+		display: none;
+	}
+
+	#mobnav {
+	    display: flex;
+        padding-right: 1.5rem;
+    }
+
+    #mobnav li {
+	    display: inline-block;
+	    padding: 0px 0.5rem;
+        font-weight: 300;
+    }
+
+    .colmar {
+	    display: none;
+}
+
+    .academy {
+	    display: none;
+}
+}
+
 
 /*Learn Section*/
 #learn {
@@ -61,30 +95,53 @@ div {
 	background-color: #d3d2d3;
 }
 
-#learn img {
-	width: 50%;
-	height: 25.5rem;
-	padding-right: 1.5rem;
+.bannerleft img {
+  width: 100%;
+  height: auto;
 }
 
-.banner-info {
-	display: flex;
-    display: inline-block;
+.bannerimg {
+  width: 60%;
 }
+
+.bannerright {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 2rem;
+	width: 30%;
+	line-height: 1.4;
+}
+
+.banneright,
+h1 {
+ 	font-size: 3rem;
+ 	font-weight: 700;
+ 	color: #444444;
+ 	padding-bottom: 2rem;
+ }
+
+ .banneright,
+ p {
+ 	font-size: 1.5rem;
+ 	color: #444444;
+    padding-bottom: 2rem;
+ }
  
  .button {
  	background-color: #414141;
  	color: white;
- 	padding: 0.5rem 1rem;
+ 	width: 85%;
+ 	text-align: center;
+ 	padding: 0.5rem;
+ 	font-size : 1.5rem;
  }
 
- h1 {
- 	font-size: 2rem;
- 	font-weight: 700;
- 	color: #444444;
+ .button:hover {
+    background-color: #858585;
+    box-shadow: 10px 10px 5px #888888;
  }
 
- h3 {
- 	font-size: 1rem;
- 	color: #444444;
- }
+
+
+
