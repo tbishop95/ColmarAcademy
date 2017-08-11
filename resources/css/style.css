@@ -55,6 +55,16 @@ div {
 	display: inline-block;
 	padding: 0px 0.5rem;
     font-weight: 300;
+    border-right: 1px solid #858585;
+    color: #000;
+}
+
+#desknav li:hover {
+	color: #2facc7;
+}
+
+#desknav .sign {
+	border-right: none;
 }
 
 #mobnav {
@@ -141,6 +151,95 @@ h1 {
     background-color: #858585;
     box-shadow: 10px 10px 5px #888888;
  }
+
+ /*Practicing Section*/
+#practicing {
+	display: flex;
+	align-items: center;
+	padding: 2rem 1.5rem;
+}
+
+.infoleft {
+	width: 61%;
+} 
+
+.infoleft img {
+  width: 100%;
+  height: auto;
+}
+
+.bannerimg {
+  width: 61%;
+}
+
+.infoleft,
+h2 {
+ 	font-size: 2rem;
+ 	font-weight: 700;
+ 	color: #444444;
+ 	padding-top: 2rem;
+ 	padding-bottom: 1.5rem;
+ }
+
+ .infoleft,
+ p {
+ 	font-size: 1rem;
+ 	color: #444444;
+    padding-bottom: 2rem;
+    font-weight: 300;
+ }
+
+ .citation {
+ 	font-size: 0.75rem;
+ 	font-weight: 700;
+ }
+
+.inforight {
+	flex-direction: column;
+	padding-left: 2rem;
+}
+
+.information img {
+  width: 35%;
+  height: 100%;
+  padding: 1rem;
+}
+
+.information {
+   padding-left: 1rem;
+   border-left: 1px solid #cecece;
+   display: flex;
+   border-bottom: 1px solid #858585;
+   border-top: 1px solid #858585;
+   justify-content: flex-start;
+   align-items: flex-start;
+   background-color: white;
+}
+
+.orientation {
+	border-top: none;
+}
+
+.lecture {
+	border-bottom: none;
+	margin-top: 2px;
+}
+
+.campus {
+	margin-top: 2px;
+}
+
+.information:hover {
+	background-color: #cecece;
+}
+
+.description,
+a {
+	color: #2facc7;
+}
+
+
+
 
 
 
