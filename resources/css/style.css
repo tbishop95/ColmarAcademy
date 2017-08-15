@@ -14,13 +14,14 @@ a {
 }
 
 /*Navigation*/
-#navigation {
+navigation {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	height: 4rem;
 	width: 100%;
 	background-color: white;
+	position: fixed;
 	z-index: 2;
 }
 
@@ -161,6 +162,13 @@ p {
 		flex-direction: column;
 		align-content: center;
 	}
+
+	.bannerright {
+		align-items: center;
+		padding: 0;
+		width: 100%;
+		text-align: left
+	}
 }
 /*Practicing Section*/
 #practicing {
@@ -262,7 +270,7 @@ a {
 		display: none;
 	}
 
-  .infoleft p, h2 {
+  .infoleft p, {
 		display: none;
 	}
 
@@ -270,18 +278,33 @@ a {
 		display: inherit;
 	}
 
+	img.mobile {
+		width: 100%;
+		padding-left: 0;
+	}
+
 	.information {
-		flex-direction: column;
+		flex-direction: column;	
+		border: none;
+		padding-left: 0;
+	}
+
+	.infoleft {
+		padding-top: 1rem;
+		padding-left: 1rem;
+		padding-right: 2rem;
 	}
 
 	.description {
+		padding-bottom: 2rem;
+		padding-left: 1rem;
 	}
 }
 
 /*Learn Section*/
 #learn {
 	display: flex;
-  flex-direction: column;
+    flex-direction: column;
 	background-color: #d3d2d3;
 	justify-content: center;
 	text-align: center;
@@ -358,6 +381,11 @@ a {
 		text-align: left;
 	}
 
+	.mobspan:hover {
+		background-color: #858585;
+		color: #fff;
+	}
+
 }
 /*Thesis Section*/
 #Thesis {
@@ -368,19 +396,20 @@ a {
 	padding-top: 2rem;
 }
 
-.infoleft {
+.thesisleft {
 	display: flex;
 	flex-direction: column;
 	width: 60%;
 	height: auto;
+	text-align: center;
 }
 
-.infoleft video {
+.thesisleft video {
 	width: 100%;
 	height: auto;
 }
 
-.infoleft,
+.thesisleft,
 h2 {
 	font-size: 2rem;
 	font-weight: 700;
@@ -389,7 +418,7 @@ h2 {
 	padding-bottom: 1.5rem;
 }
 
-.infoleft,
+.thesisleft,
 p {
 	font-size: 1rem;
 	color: #444444;
@@ -397,7 +426,7 @@ p {
 	font-weight: 300;
 }
 
-.inforight {
+.thesisright {
 	flex-direction: column;
 	padding-left: 2rem;
 }
@@ -437,4 +466,26 @@ p {
 	.thesisinfo {
 		display: none;
 	}
+
+	video.thesisleft {
+		display: inherit;
+	}
+
+	.thesisleft {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+/*Footer*/
+footer {
+	display: flex;
+	justify-content: space-between;
+	border-top: 1px solid #cecece;
+	margin-top: 2rem;
+	padding-top: 2rem;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+	margin-bottom: 3rem;
+	color: #858585;
 }
