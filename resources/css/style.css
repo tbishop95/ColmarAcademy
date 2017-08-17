@@ -1,7 +1,7 @@
 body {
 	color: black;
 	font-size: 16px;
-	font-family: Helvetica;
+	font-family: 'Montserrat', sans-serif;
 	width: 100%
 }
 
@@ -55,7 +55,7 @@ navigation {
 	padding-right: 1.5rem;
 }
 
-#desknav li {
+#desknav a {
 	display: inline-block;
 	padding: 0px 0.5rem;
 	font-weight: 300;
@@ -63,13 +63,19 @@ navigation {
 	color: #000;
 }
 
-#desknav li:hover {
+#desknav a:hover {
 	color: #2facc7;
 }
 
 #desknav .sign {
 	border-right: none;
 }
+
+a i {
+	padding-left: 0.625rem;
+}
+
+
 
 #mobnav {
 	display: none;
@@ -81,12 +87,11 @@ navigation {
 	}
 
 	#mobnav {
-		display: flex;
-		justify-content: space-around;
+		display: inherit;
 		padding-right: 1.5rem;
 	}
 
-	#mobnav li {
+	#mobnav a {
 		display: inline-block;
 		padding: 0px 0.5rem;
 		font-weight: 300;
@@ -110,13 +115,14 @@ navigation {
 	background-color: #d3d2d3;
 }
 
-.bannerleft img {
-	width: 100%;
+.bannerleft {
+	width: 60%;
 	height: auto;
 }
 
 .bannerimg {
-	width: 60%;
+	width: 100%;
+	padding-top: 4rem;
 }
 
 .bannerright {
@@ -146,15 +152,13 @@ p {
 .button {
 	background-color: #414141;
 	color: white;
-	width: 85%;
 	text-align: center;
 	padding: 0.5rem;
 	font-size : 1.5rem;
 }
 
 .button:hover {
-	background-color: #858585;
-	box-shadow: 10px 10px 5px #888888;
+	background-color: #686868;
 }
 
 @media only screen and (max-width: 660px) {
@@ -163,12 +167,33 @@ p {
 		align-content: center;
 	}
 
+	.bannerleft {
+	width: 100%;
+	height: auto;
+	padding-top: 4rem;
+}
+
+
 	.bannerright {
 		align-items: center;
 		padding: 0;
 		width: 100%;
 		text-align: left
 	}
+
+	.banneright,
+     h1 {
+	font-size: 2.5rem;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+.button {
+	margin-bottom: 2rem; 
+	margin-top: 1.5rem;
+	width: 100%;
+}
+
 }
 /*Practicing Section*/
 #practicing {
@@ -183,11 +208,14 @@ p {
 }
 
 
-.infoleft img {
-	width: 100%;
+.infoleft  {
+	width: 60%;
 	height: auto;
 }
 
+.pracimg {
+	width: 100%;
+}
 
 .infoleft,
 h2 {
@@ -219,7 +247,7 @@ p {
 
 .information img {
 	width: 35%;
-	height: 100%;
+	height: auto;
 	padding: 1rem;
 }
 
@@ -253,9 +281,13 @@ p {
 	background-color: #cecece;
 }
 
-.description,
-a {
+.description a {
 	color: #2facc7;
+	padding-bottom: 1rem;
+}
+
+.description a:hover {
+	color: #3cb7d2;
 }
 
 .mobile {
@@ -270,7 +302,7 @@ a {
 		display: none;
 	}
 
-  .infoleft p, {
+	.infoleft p, {
 		display: none;
 	}
 
@@ -279,32 +311,32 @@ a {
 	}
 
 	img.mobile {
-		width: 100%;
+		width: 80%;
 		padding-left: 0;
 	}
 
 	.information {
-		flex-direction: column;	
+		flex-direction: column;
 		border: none;
 		padding-left: 0;
 	}
 
-	.infoleft {
-		padding-top: 1rem;
-		padding-left: 1rem;
-		padding-right: 2rem;
+	.inforight {
+		padding-left: 0;
+		width: 80%;
 	}
+
 
 	.description {
 		padding-bottom: 2rem;
-		padding-left: 1rem;
+		padding-left: 0rem;
 	}
 }
 
 /*Learn Section*/
 #learn {
 	display: flex;
-    flex-direction: column;
+	flex-direction: column;
 	background-color: #d3d2d3;
 	justify-content: center;
 	text-align: center;
@@ -328,12 +360,12 @@ a {
 }
 
 .course:hover {
-	box-shadow: 10px 10px 5px #888888;
+	box-shadow: 10px 10px 5px #959595;
 }
 
 .course img{
-  width:100%;
-  height: auto;
+	width:100%;
+	height: auto;
 }
 
 .courseheader {
@@ -355,10 +387,10 @@ a {
 }
 
 @media only screen and (max-width: 660px) {
-#learn {
-	border-top: 1px solid #cecece;
-	background-color: #fff;
-}
+	#learn {
+		border-top: 1px solid #cecece;
+		background-color: #fff;
+	}
 
 	.courses {
 		display: none;
@@ -371,7 +403,7 @@ a {
 	}
 
 	.mobspan {
-		color: #000;
+		color: #626262;
 		background-color: #d8d8d8;
 		margin-bottom: 0.5rem;
 		padding-left: 1rem;
@@ -433,7 +465,7 @@ p {
 
 .thesisinfo img {
 	width: 35%;
-	height: 100%;
+	height: auto;
 	padding: 1rem;
 }
 
@@ -460,6 +492,7 @@ p {
 
 .ny {
 	margin-top: 2px;
+	border-bottom: none;
 }
 
 @media only screen and (max-width: 660px) {
@@ -488,4 +521,13 @@ footer {
 	padding-right: 1.5rem;
 	margin-bottom: 3rem;
 	color: #858585;
+}
+
+.footerlinks a {
+	color: #858585;
+	padding-left: 1.5rem;
+}
+
+.footerlinks a:hover {
+	color: #2facc7;
 }
